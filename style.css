@@ -1,3 +1,75 @@
+/* Aplico font */
+@font-face {
+    font-family: Beau-Rivage;
+    src: url("Fuentes/BeauRivage-Regular.ttf");
+} 
+
+@font-face {
+    font-family: Serif-Bold;
+    src: url("Fuentes/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: Serif-italic;
+    src: url("Fuentes/PTSerif-Italic.ttf");
+}
+/* Fin de font */
+
+body {
+    background-image: url("imagenes/fondo1.jpg");
+}
+/* Aplicando Grid */
+.grid-contenedor-padre {
+    display: grid;
+    grid-template-areas: "header header nav"
+    "seccion seccion seccion"
+    "seccionB seccionB seccionB"
+    "footer footer footer";
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.header-contenedor {
+    grid-area: header;
+    margin-top: 3px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 40px;
+    background-image: url("imagenes/logo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.grid-contenedor-hijo {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.seccion {
+    grid-area: seccion;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.seccionB {
+    grid-area: seccionB;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer {
+    grid-area: footer;
+    color: white;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* Fin del Grid */
 
 /* CSS del formulario: */
 #contacto{
