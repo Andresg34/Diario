@@ -31,6 +31,10 @@ h1 {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
+
 }
 ul li {
     font-family: Serif-Bold;
@@ -69,6 +73,63 @@ h6 {
 }
 
 /* Aplicando CSS en la parte noticias.html */ 
+.menu-noticias {
+    border: 1px solid black;
+    background-color: white;
+    font-size: 20px;
+    font-family: Serif-italic;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.futbol-section {
+    border: 1px solid black;
+    font-family: Serif-italic;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.basquet-section {
+    border: 1px solid black;
+    font-family: Serif-italic;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.tennis-section {
+    border: 1px solid black;
+    font-family: Serif-italic;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.noticias-section {
+    border: 1px solid black;
+    font-family: Serif-italic;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.transformation:hover {
+    transform: translate(40px, 40px);
+    transition: all .10s;
+    opacity: 0.5;
+    -webkit-transform: translate(40px, 40px);
+}
+
 
 
 /* Aplicando Grid */
@@ -82,7 +143,7 @@ h6 {
     height:100%;
     width:100%;
     margin:0px;
-    grid-template-rows: 30% 3% 65% 30%;
+    grid-template-rows: 20% 5% 70% 5%;
 }
 
 .grid-header {
@@ -113,6 +174,7 @@ h6 {
     grid-area: footer;
     color: white;
     background-color: gray;
+    border: 1px solid black;
 }
 /* Fin del Grid */
 
