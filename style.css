@@ -150,6 +150,7 @@ h6 {
     grid-area: header;
     margin-top: 3px;
     border-radius: 6px;
+    border: 1px solid black;
     background-color: white;
     font-size: 40px;
     background-image: url("imagenes/logo.png");
